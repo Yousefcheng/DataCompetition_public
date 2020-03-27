@@ -4,6 +4,7 @@
 
 ## 数据集
 [官方下载](https://www.datafountain.cn/competitions/354/datasets)  
+## baseline
 baseline是[阿水的开源仓库](https://github.com/finlay-liu/kaggle_public/tree/master/CCF2019-%E8%A7%86%E9%A2%91%E7%89%88%E6%9D%83%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95)
 
 ## 整体思路:
