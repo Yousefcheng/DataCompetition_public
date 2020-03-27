@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------------
+注册：(post)
+xyapi.lzhu.top/api/v1/doregister
+传值：username（用户名）phone（手机）password（密码）
+返回值：用户id
+
+登录：（post）
+xyapi.lzhu.top/api/v1/dologin
+传值：username(用户名) password（密码）
+----------------------------------------------------------------------------------
+生成协议：
+xyapi.lzhu.top/api/v1/doProtocol  Post 请求
+传值：title（标题），content（内容），signatoryNum（签署人数）,username（发起人的用户名）,share(是否分享.0不分享，1分享)
+
+获取协议（分享协议）:
+http:// xyapi.lzhu.top/api/v1/getProtocol?id= （get请求）
+例：http:// xyapi.lzhu.top/api/v1/getProtocol?id=5b752c6965fa1d3ae0fd2bb8
+State 为0 ->签署人数未满。State为1->签署人数已满
+
+签署协议：
+xyapi.lzhu.top/api/v1/signProtocol  Post 请求
+传值：username（用户名），id（协议id）。
+
+生成漂流瓶：
+xyapi.lzhu.top/api/v1/makefloater  (post请求)
+传值：title (漂流瓶标题) content(漂流瓶内容) region (漂流地方)username (发起者的用户名)
+
+获取漂流瓶列表
+http:// xyapi.lzhu.top/api/v1/floaterList (get)
+
+查看漂流瓶:
+xyapi.lzhu.top/api/v1/getFloater   (get)
+传值：协议的id
+
+签署漂流瓶：
+xyapi.lzhu.top/api/v1/signFloater (post请求)
+传值:漂流瓶的id,签署人的用户名。
+
+修改个人信息：
+xyapi.lzhu.top/api/v1/modifyinfo （post请求）
+传值： 
+
+我参与的协议：
+xyapi.lzhu.top/api/v1/myprotocol（get请求）
+传值：用户的id
+
+获取评论列表：(get)
+xyapi.lzhu.top/api/v1/protocol-commentsList?id=协议的id
+
+发表评论：(post)
+xyapi.lzhu.top/api/v1/questions-comments
+传值：protocol_id，user_id，content
+
+点赞（post）
+xyapi.lzhu.top/api/v1/protocol-parise
+传值：protocol_id，user_id
+
+8/18
+根据id获取用户信息（get）
+xyapi.lzhu.top/api/v1/userinfo
+传值：id
+
+查看具体协议(get)
+xyapi.lzhu.top/api/v1/viewProtocol
+传值协议的id
+
+搜索离自己近的协议暂时做不了...
+
+//意见反馈(post)
+xyapi.lzhu.top/api/v1/feedback
+传值：content(必填)，qq,phone,weixin(选填)
+
+
+//漂流瓶页面数据(get)
+xyapi.lzhu.top/api/v1/myfloater
+传值：id(用户的id)
+
+//改变协议状态(post)
+xyapi.lzhu.top/api/v1/changeProtocolState
+传值：id(协议的id)
+
+//随机获取漂流瓶(get)
+xyapi.lzhu.top/api/v1/getRandomFloater
+暂时无法“非当前用户发表的协议”，做这个有点耗时，等之前的都改好后再改吧
+
+//获取协议列表(get)
+xyapi.lzhu.top/api/v1/protocolList/pageSize/page
+
+http 和 https 请求都可以使用

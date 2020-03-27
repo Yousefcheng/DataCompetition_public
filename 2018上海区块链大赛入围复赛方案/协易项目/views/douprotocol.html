@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+    <title>协易·抖协议</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- fontawesome -->
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <!-- online fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Markazi+Text:400,500,600,700" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="home">
+        <!-- inner banner -->
+        <div class="inner-banner">
+            <!-- header -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-fixed-top">
+                <div class="container">
+                    <h1>
+                        <a class="navbar-brand text-white" href="index.html">
+                            <img src="https://dreamyheart-images.oss-cn-beijing.aliyuncs.com/protocol-logoy.png" width="80%" style="vertical-align:baseline">
+                            <a id="TYUT"><img src="http://www2017.tyut.edu.cn/images/LOGO.png" width="180px" style="vertical-align:baseline"></a>
+                            <script type="text/javascript">
+                                if(document.body.scrollWidth < 400){
+                                    document.getElementById('TYUT').style.display = 'none';
+                                }
+                            </script>
+                        </a>
+                    </h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-lg-auto text-center align-items-center">
+                            <li class="nav-item   mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="/">主页
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="/douprotocol">抖协议</a>
+                            </li>
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="/floater">漂流瓶</a>
+                            </li>
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="/createprotocol">生成协议</a>
+                            </li>
+                            {{if !login}}
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="/login">登录</a>
+                            </li>
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="/login#about" style="margin-left:-3rem ">/&nbsp;注册</a>
+                            </li>
+                            {{else}}
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="/center/{{username}}/0">个人中心</a>
+                            </li>
+                            {{/if}}
+                            <!--<li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    协议
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="single.html">协易 · 协议</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="protocol-generation.html">生成协议</a>
+                                    <a class="dropdown-item" href="floater.html">漂流瓶协议</a>
+                                    <a class="dropdown-item" href="Dprotocol.html">抖协议</a>
+                                </div>
+                            </li>-->
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- /.container -->
+            </nav>
+            <!-- //header -->
+        </div>
+        <!-- //inner banner -->
+        <!-- breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="margin-bottom: 0!important;">
+                <li class="breadcrumb-item">
+                    <a href="/">主页</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">抖协议</li>
+            </ol>
+        </nav>
+        <!-- //breadcrumbs -->
+
+        <!-- blog -->
+        <section class="blog_w3ls py-lg-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-4">
+                        <div class="wthree-title">
+                            <h3 class="agile-title text-white">
+                                <span>协</span>
+                                <span>易</span>
+                                <br> Block chain protocol
+                                <span class="title-pos text-white">blog</span>
+                            </h3>
+                            <p class="my-lg-5 mt-3 mb-5">
+                                抖协议专注于分享用户生成的有趣协议，让更多对区块链小协议感兴趣的人参与进来。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //blog grid -->
+                    <!-- blog grid -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header m-0">
+                                <h5 class="blog-title card-title m-0">
+                                    <a href="single.html">Cras ultricies ligula sed.</a>
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo,
+                                    lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit.</p>
+                                <a href="single.html" class="service-btn">Read more</a>
+                            </div>
+                            <div class="card-footer blog_w3icon border-top pt-2 mt-3 d-flex justify-content-between">
+                                <small>
+                                    <b>By: Loremipsum</b>
+                                </small>
+                                <span>
+                                    May 21,2018
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //blog grid -->
+                    <!-- blog grid -->
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="blog-title card-title m-0">
+                                    <a href="single.html">Cras ultricies ligula sed.</a>
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo,
+                                    lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit.</p>
+                                <a href="single.html" class="service-btn">Read more</a>
+                            </div>
+                            <div class="card-footer blog_w3icon border-top pt-2 mt-3 d-flex justify-content-between">
+                                <small>
+                                    <b>By: Loremipsum</b>
+                                </small>
+                                <span>
+                                    June 21,2018
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //blog grid -->
+                    <!-- blog grid -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header m-0">
+                                <h5 class="blog-title card-title m-0">
+                                    <a href="single.html">Cras ultricies ligula sed.</a>
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo,
+                                    lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit.</p>
+                                <a href="single.html" class="service-btn">Read more</a>
+                            </div>
+                            <div class="card-footer blog_w3icon border-top pt-2 mt-3 d-flex justify-content-between">
+                                <small>
+                                    <b>By: Loremipsum</b>
+                                </small>
+                                <span>
+                                    May 21,2018
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //blog grid -->
+                    <!-- blog grid -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header m-0">
+                                <h5 class="blog-title card-title m-0">
+                                    <a href="single.html">Cras ultricies ligula sed.</a>
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo,
+                                    lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit.</p>
+                                <a href="single.html" class="service-btn">Read more</a>
+                            </div>
+                            <div class="card-footer blog_w3icon border-top pt-2 mt-3 d-flex justify-content-between">
+                                <small>
+                                    <b>By: Loremipsum</b>
+                                </small>
+                                <span>
+                                    May 21,2018
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //blog grid -->
+                    <!-- blog grid -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header m-0">
+                                <h5 class="blog-title card-title m-0">
+                                    <a href="single.html">Cras ultricies ligula sed.</a>
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p>Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo,
+                                    lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit.</p>
+                                <a href="single.html" class="service-btn">Read more</a>
+                            </div>
+                            <div class="card-footer blog_w3icon border-top pt-2 mt-3 d-flex justify-content-between">
+                                <small>
+                                    <b>By: Loremipsum</b>
+                                </small>
+                                <span>
+                                    May 21,2018
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //blog grid -->
+                </div>
+            </div>
+        </section>
+        <!-- //blog -->
+        <!-- services -->
+
+        <!-- //services -->
+        <!-- services-main -->
+
+        <!-- //services-main-->
+        <!-- stats -->
+
+        <!-- //stats -->
+        <!-- branches -->
+
+        <!-- //branches -->
+        <!-- footer -->
+
+        <!-- //footer -->
+        <div class="cpy-right text-center  py-3 bg-dark">
+            <p class="text-white">Copyright &copy; 2018.Made With Love By 协易.</p>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- dropdown nav -->
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!--  menu toggle -->
+    <script src="js/menu.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/scrolling-nav.js"></script>
+    <!-- counter -->
+    <script src="js/counter.js">
+    </script>
+    <!-- smooth scroll -->
+    <script src="js/SmoothScroll.min.js"></script>
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear'
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

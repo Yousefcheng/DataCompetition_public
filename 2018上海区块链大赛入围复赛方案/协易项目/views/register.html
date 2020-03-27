@@ -1,0 +1,104 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>协易</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="login/css/style.css" type="text/css" media="all">
+    <!-- //Custom-Stylesheet-Links -->
+    <!--fonts -->
+
+    <!-- //fonts -->
+    <!-- Font-Awesome-File -->
+    <link rel="stylesheet" href="login/css/font-awesome.css" type="text/css" media="all">
+</head>
+
+<body>
+    <h1 class="title-agile text-center">协易</h1>
+    <div class="content-w3ls">
+        <div class="agileits-grid">
+            <div class="content-top-agile">
+                <h2 style="text-align: center;font-size: 3rem">注册</h2>
+            </div>
+            <div class="content-bottom">
+                <form method="post" onsubmit="return false;">
+                    <div class="field_w3ls">
+                        <div class="field-group">
+                            <input name="text1" id="text1" type="text" value="" placeholder="用户名" required>
+                        </div>
+                        <div class="field-group">
+                            <input name="text1" id="text2" type="text" value="" placeholder="手机号" required>
+                        </div>
+                        <div class="field-group">
+                            <input id="password-field-1" type="password" class="form-control" name="password" value="" placeholder="设置密码">
+                        </div>
+                        <div class="field-group">
+                            <input id="password-field-2" type="password" class="form-control" name="password" value="" placeholder="确认密码">
+                        </div>
+                    </div>
+                    <div class="wthree-field">
+                        <input id="saveForm" name="saveForm" type="submit" value="注册" />
+                    </div>
+                    <ul class="list-login">
+                        <li>
+                            <a href="/login" class="text-right" style="color: #000">&nbsp;&nbsp;&nbsp;登录账号&nbsp;&nbsp;&nbsp;</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                            </a>
+                        </li>
+                        <li class="clearfix"></li>
+                    </ul>
+                </form>
+            </div>
+            <!-- //content bottom -->
+        </div>
+    </div>
+    <div class="copyright text-center">
+        <p>© 2018 All rights reserved | Design by 协易
+        </p>
+    </div>
+    <!--//copyright-->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="contractjs/register.js"></script>
+    <!-- script for show password -->
+    <script>
+        $(".toggle-password").click(function () {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+    <!-- /script for show password -->
+
+</body>
+<!-- //Body -->
+
+</html>
