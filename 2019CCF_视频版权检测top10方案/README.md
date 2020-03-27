@@ -15,16 +15,17 @@ baseline是[阿水的开源仓库](https://github.com/finlay-liu/kaggle_public/t
 
 ## 我们的方案以及处理细节:  
 - 抽帧:对视频每秒抽1帧  
-抽帧如图:
+抽帧如图:  
 ![](./pic/1.png)
-![](./pic/2.png)
+![](./pic/2.png)  
 - 特征工程:
     - 选取模型去掉最后softmax的特征矩阵
     - 尝试了一系列resnet,densnet及其衍生类模型,最终确定se-resnet50的特征效果相较其他模型好一些
 -   相似图片匹配:用[faiss库](https://github.com/facebookresearch/faiss)进行加速匹配(此场景中时间加速了近10倍)
 - 数据清理以及时间对齐:
  -  选取源自一个视频的图片相匹配的图片中源自一个视频出现次数最多的图片,其余图片组合过滤
- 如图![](./pic/3.png)红标数据进行过滤
+ 如图![](./pic/3.png)  
+ 红标数据进行过滤
  -在时间段内进行划窗,划窗参数自己选择
 
  ## 未能实现
