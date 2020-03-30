@@ -19,9 +19,9 @@ baseline是[阿水的开源仓库](https://github.com/finlay-liu/kaggle_public/t
 ![](./pic/1.png)
 ![](./pic/2.png)  
 - 特征工程:
-    - 选取模型去掉最后softmax的特征矩阵
-    - 尝试了一系列resnet,densnet及其衍生类模型,最终确定se-resnet50的特征效果相较其他模型好一些
--   相似图片匹配:用[faiss库](https://github.com/facebookresearch/faiss)进行加速匹配(此场景中时间加速了近10倍)
+  - 选取模型去掉最后softmax的特征矩阵
+  - 尝试了一系列resnet,densnet及其衍生类模型,最终确定se-resnet50的特征效果相较其他模型好一些
+- 相似图片匹配:用[faiss库](https://github.com/facebookresearch/faiss)进行加速匹配(此场景中时间加速了近10倍)
 - 数据清理以及时间对齐:
 
  - 筛选数据，使每张侵权视频帧对应一张版权视频帧。如果有一张侵权视频帧对应多张版权视频帧的情况，保留匹配精确度最高的版权视频帧。
