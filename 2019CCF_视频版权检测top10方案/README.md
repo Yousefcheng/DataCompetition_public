@@ -55,11 +55,11 @@ baseline是[阿水的开源仓库](https://github.com/finlay-liu/kaggle_public/t
  - compute_result.py 本地计算train中的分数
  - compute_time_diff.py 计算时间相差,得到csv,对模型进行评分
  - sort_and_mix.py 模型结果融合
--extract_keyframe.py(extract_keyframe.ipynb) 对视频每秒的帧进行提取
--main.py(main.ipynb) 得到图片相似度匹配的结果
--tran.csv 官方给的label
--train_get_acc.py   评估训练后模型的性能
--time_serialize_data.py 数据清洗和时间对齐
+- extract_keyframe.py(extract_keyframe.ipynb) 对视频每秒的帧进行提取
+- main.py(main.ipynb) 得到图片相似度匹配的结果
+- tran.csv 官方给的label
+- train_get_acc.py   评估训练后模型的性能
+- time_serialize_data.py 数据清洗和时间对齐
 - train.py(train.ipynb) 模型训练
 
 ## Run:
